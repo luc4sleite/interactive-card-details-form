@@ -1,51 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Interactive card details form</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Formulário para cartão de crédito</title>
+  </head>
+  <body>
+    <section class="card__container">
+      <div class="card__back">
+        <img src="./images/bg-card-back.png" alt="Parte traseira do cartão" />
+        <span class="card__cvc">000</span>
+      </div>
+      <div class="card__front">
+        <img src="./images/bg-card-front.png" alt="Parte da frente do cartão" />
+        <span class="card__number">0000 0000 0000 0000</span>
+        <span class="card__name">Jane Appleseed</span>
+        <span class="card__date">00/00</span>
+      </div>
+    </section>
 
-  0000 0000 0000 0000
-  Jane Appleseed
-  00/00
+    <section class="form__container">
+      <form id="form-card">
+        <div class="group">
+          <label for="name">Nome do titular</label>
+          <input
+            id="cardholder"
+            name="nome"
+            type="text"
+            placeholder="Fulano de Tal"
+          />
+        </div>
+        <div class="group">
+          <label for="cardnumber">Número do cartão</label>
+          <input
+            id="cardnumber"
+            name="number"
+            type="text"
+            placeholder="1234 5678 9123 0000"
+          />
+        </div>
+        <div class="group">
+          <label for="date">Data de Validade (MM/AA)</label>
+          <input id="month" name="date" type="text" placeholder="MM" />
+        </div>
+        <div class="group">
+          <input id="year" name="date" type="text" placeholder="AA" />
+        </div>
+        <div class="group">
+          <label for="cvc">CVC</label>
+          <input id="cvc" name="code" type="text" placeholder="123" />
+        </div>
 
-  000
+        <button id="add-card" class="button__card">Confirma</button>
+      </form>
+    </section>
 
-  Cardholder Name
-  e.g. Jane Appleseed
+    <!-- Completed state start -->
 
-  Card Number
-  e.g. 1234 5678 9123 0000
+    <!-- Thank you! We've added your card details Continue -->
 
-  Exp. Date (MM/YY)
-  MM
-  YY
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Lucas Gonçalves Leite</a>.
+    </div>
 
-  CVC
-  e.g. 123
-
-  Confirm
-
-  <!-- Completed state start -->
-
-  Thank you!
-  We've added your card details
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <script src="./js/index.js"></script>
+  </body>
 </html>
