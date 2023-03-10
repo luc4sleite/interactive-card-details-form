@@ -3,3 +3,77 @@ body {
   font-weight: 500;
   font-size: 18px;
 }
+
+.card__container {
+  display: flex;
+  flex-direction: column;
+  background-image: url("../images/bg-main-mobile.png");
+  color: #ffffff;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.card__image-back,
+.card__image-front {
+  width: 286px;
+  height: 157px;
+}
+
+.card__back,
+.card__front {
+  display: flex;
+  position: relative;
+}
+
+.card__image-back {
+  margin: 1.5rem 1rem 0 4.5rem;
+}
+
+.card__cvc {
+  position: absolute;
+  top: 56%;
+  left: 83%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  font-size: 9px;
+}
+
+/* .card__front {
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+} */
+
+.card__number,
+.card__name,
+.card__date {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.card__number {
+  top: 65%;
+  left: 35%;
+  font-size: 18px;
+  letter-spacing: 2.2px;
+}
+
+.card__name {
+  top: 85%;
+  left: 15%;
+  font-size: 9px;
+  font-style: normal;
+  line-height: 11px;
+  letter-spacing: 1.28571px;
+  text-transform: uppercase;
+}
+
+.card__date {
+  top: 85%;
+  left: 65%;
+  font-size: 9px;
+  font-style: normal;
+  line-height: 11px;
+  letter-spacing: 1.28571px;
+}
