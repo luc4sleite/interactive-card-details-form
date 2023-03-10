@@ -1,40 +1,37 @@
-# Frontend Mentor - Interactive card details form
+# Interactive card details form
 
 ![Design preview for the Interactive card details form coding challenge](./design/desktop-preview.jpg)
 
-## Welcome! 👋
+## Bem-vindos! 👋
 
-Thanks for checking out this front-end coding challenge.
+Obrigado por dar uma conferida nesse desafio de código para front-end.
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+Este desafio tem como base o projeto do [Frontend Mentor](https://www.frontendmentor.io).
 
-**To do this challenge, you need a good understanding of HTML, CSS and JavaScript.**
+**Para realiza-lo, eu precisei utilizar meus conhecimentos em HTML, CSS e JavaScript **
 
-## The challenge
+## O Desafio
 
-Your challenge is to build out this interactive card details form and get it looking as close to the design as possible.
+Meu desafio é construir um **formulário detalhado de cartão interativo** mais próximo possível do design proposto.
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+Eu uso todas as ferramentas disponíveis para conseguir completar o desafio. Acabo aproveitando a oportunidade para aprender coisas que desconhecia, mas que são necessárias para finalizar este projeto.
 
-Your users should be able to: 
+Os usuários poderão:
 
-- Fill in the form and see the card details update in real-time
-- Receive error messages when the form is submitted if:
-  - Any input field is empty
-  - The card number, expiry date, or CVC fields are in the wrong format
-- View the optimal layout depending on their device's screen size
-- See hover, active, and focus states for interactive elements on the page
+- Preencher no formulário e ver os dados serem atualizados ao mesmo tempo no cartão
+- Receber mensagens de erro quando o formulário submetido conter:
+  - Qualquer campo não preenchido
+  - O número do cartão, a data de validade, ou o CVC estiverem no formato errado
+- Visualizar a responsividade da tela, conforme o dispositivo que estiver utilizando
+- Observar estilizações específicas sobre os campos, quando houver o mouse em cima de algum campo, ou quando for clicado e ver elementos interativos na página
 
-Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
 
-### Expected behaviour
+### Comportamentos esperados
 
-- Update the details on the card as the user fills in the fields
-- Validate the form fields when the form is submitted
-- If there are no errors, display the completed state
-- Reset the form when the user clicks "Continue" on the completed state
-
-**⚠️ IMPORTANT ⚠️: When you create the live version of your project, we recommmend giving it a random name for the URL. This is because with it being a fake credit card form, some browsers will open a warning notice before people can access your project. So it's best to name the project something unrelated to credit cards so that browsers don't show the warning to people viewing your project.**
+- Atualizar os detalhes no cartão conforme é preenchido pelo usuário
+- Validar os campos do formulário com os que forem submetidos
+- Caso não haja erros, mostrar o status completo
+- Reiniciar o formulário quando o usuário clicar em "Continuar"
 
 ## Where to find everything
 
