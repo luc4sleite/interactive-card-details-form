@@ -2,48 +2,47 @@ body {
   font-family: "Space Grotesk";
   font-weight: 500;
   font-size: 18px;
+  background-image: url("../images/bg-main-mobile.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
 }
 
+/* CARTÃO DISPLAY */
 .card__container {
   display: flex;
   flex-direction: column;
-  background-image: url("../images/bg-main-mobile.png");
   color: #ffffff;
-  background-size: contain;
-  background-repeat: no-repeat;
+  position: relative;
+  margin-bottom: 20rem;
 }
 
 .card__image-back,
 .card__image-front {
   width: 286px;
   height: 157px;
+  position: absolute;
+}
+
+.card__image-front {
+  margin-top: 7.5rem;
+  margin-left: 1rem;
+}
+
+.card__image-back {
+  margin-top: 2rem;
+  margin-left: 5rem;
 }
 
 .card__back,
 .card__front {
   display: flex;
   position: relative;
+  filter: drop-shadow(0px 39px 60px rgba(0, 0, 0, 0.142481));
 }
 
-.card__image-back {
-  margin: 1.5rem 1rem 0 4.5rem;
-}
-
-.card__cvc {
-  position: absolute;
-  top: 56%;
-  left: 83%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-  font-size: 9px;
-}
-
-/* .card__front {
-  top: 50%;
-  left: 50%;
-  z-index: 1;
-} */
-
+.card__cvc,
 .card__number,
 .card__name,
 .card__date {
@@ -52,16 +51,25 @@ body {
   z-index: 1;
 }
 
+.card__cvc {
+  margin-top: 6.8rem;
+  margin-left: 20rem;
+  font-size: 9px;
+  letter-spacing: 1.28571px;
+}
+
 .card__number {
-  top: 65%;
-  left: 35%;
+  margin-top: 13.5rem;
+  margin-left: 13.8rem;
   font-size: 18px;
   letter-spacing: 2.2px;
+  word-break: keep-all;
+  width: 100vw;
 }
 
 .card__name {
-  top: 85%;
-  left: 15%;
+  margin-top: 15.5rem;
+  margin-left: 5rem;
   font-size: 9px;
   font-style: normal;
   line-height: 11px;
@@ -70,10 +78,51 @@ body {
 }
 
 .card__date {
-  top: 85%;
-  left: 65%;
+  margin-top: 15.5rem;
+  margin-left: 16.5rem;
   font-size: 9px;
   font-style: normal;
   line-height: 11px;
   letter-spacing: 1.28571px;
+}
+
+/* FORMULÁRIO */
+
+.form__container {
+  display: flex;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+#form__card {
+  display: flex;
+}
+
+.group {
+  padding: 1rem;
+}
+
+input {
+  margin-top: 0.5rem;
+  box-sizing: border-box;
+  border: 1px solid #DFDEE0;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+}
+
+label {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #21092F;
+}
+
+.button__card {
+  background: #21092F;
+  border-radius: 8px;
+  color: #ffffff;
+  padding: 1rem 0;
+  width: 100%;
 }
