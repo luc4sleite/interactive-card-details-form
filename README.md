@@ -31,15 +31,12 @@ Os usuários poderão:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Screenshot 2023-03-12 at 22-06-18 Formulário para cartão de crédito](https://user-images.githubusercontent.com/115735167/224586329-5d9d3411-9eb9-4afe-ada6-4c008fd23207.png)
+![Screenshot 2023-03-12 at 22-06-54 Formulário para cartão de crédito](https://user-images.githubusercontent.com/115735167/224586356-67a2d667-3e92-46b8-a0d2-18825f2f37a6.png)
+![Screenshot 2023-03-12 at 22-07-33 Formulário para cartão de crédito](https://user-images.githubusercontent.com/115735167/224586390-bd0ee7e8-0abd-4189-af19-fec7dbc54d47.png)
+![Screenshot 2023-03-12 at 22-07-59 Formulário para cartão de crédito](https://user-images.githubusercontent.com/115735167/224586422-b0f6c324-3d2d-4ae1-92d9-f0425a8ab22c.png)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
 
 ### Links
 
