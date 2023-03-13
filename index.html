@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
     <link
       rel="icon"
@@ -23,65 +22,81 @@
     <title>Formulário para cartão de crédito</title>
   </head>
   <body>
-    <section class="card__container">
-      <div class="card__back">
-        <img class="card__image-back" src="./images/bg-card-back.png" alt="Parte traseira do cartão" />
-        <span class="card__cvc card-info">123</span>
+    <div class="card__back">
+      <div class="card__backNumber">000</div>
+    </div>
+
+    <div class="card__front">
+      <div class="circle">
+        <div class="bigCircle"></div>
+        <div class="smallCircle"></div>
       </div>
-      <div class="card__front">
-        <img class="card__image-front" src="./images/bg-card-front.png" alt="Parte da frente do cartão" />
-        <span class="card__number card-info">1234 5678 9123 0000</span>
-        <span class="card__name card-info">Fulano de Tal</span>
-        <span class="card__date card-info">MM/AA</span>
+
+      <div class="card__details">
+        <div class="card__details-number">0000 0000 0000 0000</div>
+        <div class="card__details-name">
+          <div class="name">Fulano de Tal</div>
+          <div class="date">
+            <span class="mm">00</span>/<span class="yy">00</span>
+          </div>
+        </div>
       </div>
-    </section>
+    </div>
 
-    <section class="form__container">
-      <form id="form-card">
-        <div class="group">
-          <label for="name">Nome do titular</label>
-          <input
-            id="cardholder"
-            name="nome"
-            type="text"
-            placeholder="Fulano de Tal"
-          />
+    <div class="form">
+      <div class="cardHolderName">
+        NOME DO TITULAR
+        <input
+          type="text"
+          class="cardHolderNameInput"
+          placeholder="Fulano de Tal"
+        />
+        <div class="nameError">
+          Formato inválido, digite apenas caracteres
         </div>
-        <div class="group">
-          <label for="cardnumber">Número do cartão</label>
-          <input
-            id="cardnumber"
-            name="number"
-            type="text"
-            placeholder="1234 5678 9123 0000"
-          />
+      </div>
+
+      <div class="cardNumber">
+        NÚMERO DO CARTÃO
+        <input
+          type="text"
+          class="cardHolderNumberInput"
+          placeholder="1234 5678 9123 0000"
+        />
+        <div class="numberError">
+          Formato inválido, digite apenas os 16 digítos
         </div>
-        <div class="group">
-          <label for="date">Data de Validade (MM/AA)</label>
-          <input id="month" name="date" type="text" placeholder="MM" />
-        </div>
-        <div class="group">
-          <input id="year" name="date" type="text" placeholder="AA" />
-        </div>
-        <div class="group">
-          <label for="cvc">CVC</label>
-          <input id="cvc" name="code" type="text" placeholder="123" />
+      </div>
+
+      <div class="dateCvc">
+        <div class="label">
+          <p>DATA DE VALIDADE (MM/AA)</p>
+          <p>CVC</p>
         </div>
 
-        <button id="add-card" class="button__card">Confirma</button>
-      </form>
-    </section>
+        <div class="inputs">
+          <input type="number" class="month" placeholder="MM" />
+          <input type="number" class="year" placeholder="AA" />
+          <input type="number" class="cvc" placeholder="000" />
+        </div>
 
-    <!-- Completed state start -->
+        <div class="error">
+          <div class="monthYearError">Não pode estar em branco</div>
+          <div class="cvcError">Não pode estar em branco</div>
+        </div>
 
-    <!-- Thank you! We've added your card details Continue -->
+        <div class="button">Confirmar</div>
+      </div>
+    </div>
 
-    <!-- <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Lucas Gonçalves Leite</a>.
-    </div> -->
+    <div class="formCompleted">
+      <div class="center">
+        <img src="./images/icon-complete.svg" alt="Logo de verificado" />
+        <div class="thankyou">OBRIGADO</div>
+        <div class="added">Adicionamos as informações do seu cartão</div>
+        <div class="continue">Continuar</div>
+      </div>
+    </div>
 
     <script src="./js/index.js"></script>
   </body>
